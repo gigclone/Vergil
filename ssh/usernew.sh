@@ -62,9 +62,9 @@ echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : $portsshws" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS  : $wsssl" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
 echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
-echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 #echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
 #echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -96,12 +96,12 @@ echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
 echo -e "SlowDNS     : 53,5300,443" 
 echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $(cat /etc/xray/domain):80@$Login:$Pass"
 echo -e "SSH-443     : $(cat /etc/xray/domain):443@$Login:$Pass"
-echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SETING-UDP  : $(cat /etc/xray/domain):1-65535@$Login:$Pass"
 #echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 #echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
