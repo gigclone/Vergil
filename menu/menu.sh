@@ -146,7 +146,7 @@ else
 Exp=$(curl -sS https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/permission/ipmini | grep $MYIP | awk '{print $3}')
 fi
 #Domain & IPVPS
-domain=$(cat /root/domain)
+domain=$(cat /etc/xray/domain)
 IPVPS=$(curl -s ipinfo.io/ip )
 ISPVPS=$( curl -s ipinfo.io/org )
 # Getting CPU Information
