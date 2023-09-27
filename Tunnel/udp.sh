@@ -1,7 +1,6 @@
 #!/bin/bash
 #Script UdpCustom 2023
-#Script By kanghoryTUNNELING
-#https://t.me/kanghory
+#Script By NevermoreSSH
 cd
 rm -rf /root/udp
 mkdir -p /root/udp
@@ -11,16 +10,16 @@ sleep 4
 echo " Proses Download Script UdpCustom........"
 sleep 4
 clear
-echo " Cecking Tool UdpCustom By kanghoryTUNNELING......."
+echo " Checking Tool UdpCustom By NevermoreSSH......."
 sleep 4
 clear
-echo " Succes Cecking Tool..........."
+echo " Success Checking Tool..........."
 sleep 4
 clear
 echo " Please Waiting Proses Downloading Toll UdpCustom........"
 sleep 4
 clear
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/udp-custom-linux-amd64" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
+wget -q --show-progress --load-cookies /tmp/cookies.txt "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/Tunnel/udp-custom-linux-amd64" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
 chmod +x /root/udp/udp-custom
 clear
 # install Config Default Udp
@@ -29,22 +28,22 @@ sleep 4
 echo " Proses Download Script Config Default........"
 sleep 4
 clear
-echo " Cecking Config Default By kanghoryTUNNELING......."
+echo " Checking Config Default By NevermoreSSH......."
 sleep 4
 clear
-echo " Succes Cecking Config Default Tool..........."
+echo " Success Checking Config Default Tool..........."
 sleep 4
 clear
 echo " Please Waiting Proses Downloading Default Config UdpCustom........"
 sleep 4
 clear
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
+wget -q --show-progress --load-cookies /tmp/cookies.txt "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/Tunnel/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
 chmod 644 /root/udp/config.json
 
 if [ -z "$1" ]; then
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=UDP Custom by kanghoryTUNNELING
+Description=UDP Custom by NevermoreSSH
 
 [Service]
 User=root
@@ -60,7 +59,7 @@ EOF
 else
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=UDP Custom by kanghoryTUNNELING
+Description=UDP Custom by NevermoreSSH
 
 [Service]
 User=root
