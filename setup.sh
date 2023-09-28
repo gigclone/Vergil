@@ -125,7 +125,7 @@ mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 
 echo ""
-wget -q https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
@@ -166,7 +166,7 @@ echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 
@@ -176,7 +176,7 @@ echo -e "$green          Install SLDNS              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/autoscript-ssh-slowdns/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/autoscript-ssh-slowdns/slowdns && chmod +x slowdns && ./slowdns
 clear
 
 #Instal udp
@@ -223,7 +223,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT AWAN BEBAS TUNNEL ]-===================="
+echo "=====================-[ SCRIPT PREMIUM NEVERMORESSH ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -246,7 +246,7 @@ echo "   - Trojan Go		: 443" | tee -a log-install.txt
 echo "   - slowDNS              : 443,80,8080,53,5300" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone		: Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "   - Timezone		: Asia/Kuala_Lumpur (GMT +8)"  | tee -a log-install.txt
 echo "   - Fail2Ban		: [ON]"  | tee -a log-install.txt
 echo "   - Dflate		: [ON]"  | tee -a log-install.txt
 echo "   - IPtables		: [ON]"  | tee -a log-install.txt
@@ -264,7 +264,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By Awan Bebas]-==============="
+echo "===============-[ Script Created By todfix667 ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
