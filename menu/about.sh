@@ -11,7 +11,7 @@ echo ""
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH		: 22"  | tee -a log-install.txt
-echo "   - SlowDNS    : 443,80,8080,53,5300" | tee -a log-install.txt
+echo "   - SlowDNS           : 443,80,8080,53,5300" | tee -a log-install.txt
 echo "   - SSH Websocket	: 80 [ON]" | tee -a log-install.txt
 echo "   - SSH SSL Websocket	: 443" | tee -a log-install.txt
 echo "   - SSH-UDP		: 1-65535"  | tee -a log-install.txt
