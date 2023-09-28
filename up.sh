@@ -161,6 +161,11 @@ chmod +x jam
 apt install htop -y
 apt install vnstat -y
 apt install resolvconf -y
+echo "0 1 * * * root delete" >> /etc/crontab
+echo "0 2 * * * root xp" >> /etc/crontab
+echo "0 5 * * * root clearcache" >> /etc/crontab
+echo "0 3 * * * root /usr/bin/xp" >> /etc/crontab
+echo "0 4 * * * root /usr/bin/delete" >> /etc/crontab
 
 echo -e " [INFO] Update Successfully"
 sleep 2
