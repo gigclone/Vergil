@@ -156,6 +156,12 @@ chmod +x menu-backup
 chmod +x backup
 chmod +x restore
 chmod +x jam
+
+#update
+apt install htop -y
+apt install vnstat -y
+apt install resolvconf -y
+
 echo -e " [INFO] Update Successfully"
 sleep 2
 exit
