@@ -60,7 +60,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 <br>
 
 ♦️ USING LATEST XRAY CORE <br>
-♦️ ADD CUSTOMPATH XRAY CORE MOD <br>
 ♦️ NEW UPDATE BBRPLUS 5.15.96 <br>
 ♦️ BANDWITH MONITOR <br>
 ♦️ RAM & CPU MONITOR <br>
