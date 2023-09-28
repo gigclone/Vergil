@@ -53,7 +53,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 ♦️ XRAY VLESS GRPC 443  <br>
 ♦️ XRAY TROJAN GRPC 443<br>
 ♦️ SSH WEBSOCKET 443/80<br>
-♦️ SSH SLOWDNS 443,53,5300<br>
+♦️ SSH SLOWDNS 443/53/5300<br>
 ♦️ SSH UDP 1-65535<br>
 <br>
 [ OTHER SERVICES ] <br>
