@@ -277,7 +277,7 @@ wget -O menu-vmess "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/m
 wget -O menu-vless "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/menu/menu-vless.sh"
 wget -O running "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/menu/clearcache.sh"
-#wget -O menu-trgo "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/menu/menu-trgo.sh"
+wget -O menu-trgo "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/menu/menu-trojan.sh"
 wget -O cf "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/cf.sh"
 
