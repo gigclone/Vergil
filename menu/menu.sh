@@ -233,7 +233,7 @@ echo -e "${BB}——————————————————————
 echo -e "  ${RB}♦️${NC} ${YB}Daily Data Usage    : $ttoday ${NC}"
 echo -e "  ${RB}♦️${NC} ${YB}Monthly Data Usage  : $tmon ${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo ""
+echo -e "${WB}"
 read -p "Select From Options [ 1 - 99 ] : " menu
 case $menu in
 1) clear ; menu-ssh ;;
