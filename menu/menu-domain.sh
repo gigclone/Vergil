@@ -21,7 +21,7 @@ echo -e ""
 case $opt in
 1) clear ; add-host ;;
 2) clear ; certv2ray ;;
-0) clear ; menu ;;
+0) clear ; menu-set ;;
 x) exit ;;
 *) echo "Anda salah tekan" ; sleep 1 ; menu-domain ;;
 esac
