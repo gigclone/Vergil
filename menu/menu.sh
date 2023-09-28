@@ -211,10 +211,10 @@ echo -e "                   ${WB}»»» VPS Menu «««${NC}                 "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e "  ${RB}06.${NC} ${YB}SETTING VPS ${NC}          ${RB}55.${NC} ${YB}INSTALL TCP BBR ${NC}"
 echo -e "  ${RB}07.${NC} ${YB}BACKUP/RESTORE ${NC}       ${RB}66.${NC} ${YB}INSTALL BBR+ 5.15 ${NC}"
-echo -e "  ${RB}08.${NC} ${YB}SET REBOOT ${NC}           ${RB}77.${NC} ${YB}XRAYCORE MOD 1.6.5-1 ${NC}"       
-echo -e "  ${RB}09.${NC} ${YB}ADD DOMAIN/HOST ${NC}      ${RB}88.${NC} ${YB}XRAYCORE MOD 1.7.2-1 ${NC}"      
-echo -e "  ${RB}10.${NC} ${YB}ADD NS-DOMAIN ${NC}        ${RB}99.${NC} ${YB}XRAYCORE LATEST 1.8.4 ${NC}"
-echo -e "  ${RB}11.${NC} ${YB}RENEW CERT XRAYS ${NC}    ${RB}999.${NC} ${YB}FIX UPDATE ${NC}"    
+echo -e "  ${RB}08.${NC} ${YB}SET REBOOT ${NC}           ${RB}77.${NC} ${YB}XRAYCORE LATEST 1.8.4 ${NC}"       
+echo -e "  ${RB}09.${NC} ${YB}ADD DOMAIN/HOST ${NC}      ${RB}88.${NC} ${YB}FIX UPDATE ${NC}"      
+echo -e "  ${RB}10.${NC} ${YB}ADD NS-DOMAIN ${NC}     "
+echo -e "  ${RB}11.${NC} ${YB}RENEW CERT XRAYS ${NC}  "    
 echo -e ""
 echo -e "  ${RB}12.${NC} ${YB}CHECK VPN PORT ${NC}"
 echo -e "  ${RB}13.${NC} ${YB}CHECK VPN STATUS ${NC}"
@@ -258,12 +258,10 @@ case $menu in
 20) clear ; speedtest ;;
 21) clear ; restart ;;
 22) clear ; reboot ;;
-55) clear ; bbr3 ;;
-66) clear ; bbr4 ;;
-77) clear ; mv /usr/local/bin/xray /usr/local/bin/xray.bakk && wget -q -O /usr/local/bin/xray "https://github.com/NevermoreSSH/Xcore-custompath/releases/download/Xray-linux-64-v1.6.5.1/Xray-linux-64-v1.6.5.1" && chmod 755 /usr/local/bin/xray && xray version ;;
-88) clear ; mv /usr/local/bin/xray /usr/local/bin/xray.bakk && wget -q -O /usr/local/bin/xray "https://github.com/NevermoreSSH/Xcore-custompath/releases/download/Xray-linux-64-v1.7.2-1/Xray-linux-64-v1.7.2-1" && chmod 755 /usr/local/bin/xray && xray version ;;
-99) clear ; mv /usr/local/bin/xray /usr/local/bin/xray.bakk && wget -q -O /usr/local/bin/xray "https://github.com/NevermoreSSH/Xcore-custompath/releases/download/Xray-linux-64-v1.8.4/Xray-linux-64-v1.8.4" && chmod 755 /usr/local/bin/xray && xray version ;;
-999) clear ; up ;;
+66) clear ; bbr3 ;;
+77) clear ; bbr4 ;;
+88) clear ; mv /usr/local/bin/xray /usr/local/bin/xray.bakk && wget -q -O /usr/local/bin/xray "https://github.com/NevermoreSSH/Xcore-custompath/releases/download/Xray-linux-64-v1.8.4/Xray-linux-64-v1.8.4" && chmod 755 /usr/local/bin/xray && xray version ;;
+99) clear ; up ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
