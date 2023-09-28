@@ -107,7 +107,7 @@ wget -O restore "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/back
 wget -O jam "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/jam.sh"
 wget -q -O /usr/bin/up "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/up.sh" && chmod +x /usr/bin/up
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/menu/fix.sh" && chmod +x /usr/bin/fix
-wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/autoscript-ssh-slowdns/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+#wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/autoscript-ssh-slowdns/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 
 chmod +x menu
 chmod +x menu-trial
