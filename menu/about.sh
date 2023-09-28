@@ -4,15 +4,17 @@ echo "Checking VPS"
 aureb=$(cat /home/re_otm)
 clear
 echo " "
-echo "===============-[ SCRIPT Awan Bebas VPN ]-=============="
+echo "===============-[ SCRIPT NevemoreSSH VPN ]-=============="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH		: 22"  | tee -a log-install.txt
+echo "   - SlowDNS    : 443,80,8080,53,5300" | tee -a log-install.txt
 echo "   - SSH Websocket	: 80 [ON]" | tee -a log-install.txt
 echo "   - SSH SSL Websocket	: 443" | tee -a log-install.txt
+echo "   - SSH-UDP		: 1-65535"  | tee -a log-install.txt
 echo "   - Stunnel4		: 447, 777" | tee -a log-install.txt
 echo "   - Dropbear		: 109, 143" | tee -a log-install.txt
 echo "   - Badvpn		: 7100-7900" | tee -a log-install.txt
@@ -44,11 +46,11 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "==========-[ Script Created By A todfix667 TUNNEL ]-==========="
+echo "==========-[ Script Created By todfix667 ]-==========="
 echo -e ""
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menu-ssh
 
 
 
