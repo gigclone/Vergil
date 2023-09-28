@@ -154,7 +154,7 @@ wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/ssh/ssh-vpn.sh &
 
 #pasang rc clone ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green      Memasang backup server              $NC"
+echo -e "$green      Install Backup Server              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
