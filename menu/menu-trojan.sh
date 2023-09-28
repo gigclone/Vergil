@@ -6,7 +6,7 @@ NC="\e[0m"
 RED="\033[0;31m" 
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/permission/ipmini > /root/tmp
+    curl -sS https://raw.githubusercontent.com/NevermoreSSH/permission/main/ipmini > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -24,7 +24,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/permission/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/NevermoreSSH/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -41,7 +41,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/permission/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/NevermoreSSH/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -115,6 +115,9 @@ echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account Trojan     "
 echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Extending Account Trojan Active Life      "
 echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Delete Account Trojan     "
 echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Check User Login Trojan     "
+echo -e "     ${BICyan}[${BIWhite}06${BICyan}] Check XRAY Trojan Config     "
+echo -e ""
+echo -e "     ${BICyan}[${BIWhite}00${BICyan}] Back to Main Menu     "
 
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
@@ -127,6 +130,7 @@ case $opt in
 3) clear ; renew-tr ;;
 4) clear ; del-tr ;;
 5) clear ; cek-tr ;;
+6) clear ; user-tr ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo "Boh salah tekan, Sayang kedak Babi" ; sleep 1 ; menu-trojan ;;
