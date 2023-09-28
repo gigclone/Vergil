@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script  By NevermoreSSH
-# 2023 SLOWDNS
+# 2023 
 # ===============================================
 sudo apt install squid -y
 #setting IPtables
