@@ -133,5 +133,5 @@ case $opt in
 6) clear ; user-tr ;;
 0) clear ; menu ;;
 x) exit ;;
-*) echo "Boh salah tekan, Sayang kedak Babi" ; sleep 1 ; menu-trojan ;;
+*) echo " Wrong Button " ; sleep 1 ; menu-trojan ;;
 esac
