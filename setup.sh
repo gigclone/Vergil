@@ -125,7 +125,7 @@ mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 
 echo ""
-wget -q https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/artanodrop/v4/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
@@ -154,7 +154,7 @@ wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/ssh/ssh-vpn.sh &
 
 #pasang rc clone ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green      Install Backup Server              $NC"
+echo -e "$green      Memasang backup server              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
@@ -166,7 +166,7 @@ echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/artanodrop/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 
@@ -223,7 +223,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT PREMIUM NEVERMORESSH ]-===================="
+echo "=====================-[ SCRIPT PREMIUM TUNNEL ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -243,10 +243,10 @@ echo "   - Vless None TLS	: 80" | tee -a log-install.txt
 echo "   - Trojan GRPC		: 443" | tee -a log-install.txt
 echo "   - Trojan WS		: 443" | tee -a log-install.txt
 echo "   - Trojan Go		: 443" | tee -a log-install.txt
-echo "   - slowDNS              : 443,80,8080,53,5300" | tee -a log-install.txt
+echo "   - slowdns              : 443,80,8080,53,5300" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone		: Asia/Kuala_Lumpur (GMT +8)"  | tee -a log-install.txt
+echo "   - Timezone		: Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "   - Fail2Ban		: [ON]"  | tee -a log-install.txt
 echo "   - Dflate		: [ON]"  | tee -a log-install.txt
 echo "   - IPtables		: [ON]"  | tee -a log-install.txt
@@ -264,7 +264,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By todfix667 ]-==============="
+echo "===============-[ Script Created By Awan Bebas]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
