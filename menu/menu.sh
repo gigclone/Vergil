@@ -148,7 +148,7 @@ fi
 #Domain & IPVPS
 domain=$(cat /etc/xray/domain)
 IPVPS=$(curl -s ipinfo.io/ip )
-ISPVPS=$( curl -s ipinfo.io/org )
+#ISPVPS=$( curl -s ipinfo.io/org )
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*/} / ${corediilik:-1}))"
@@ -192,7 +192,7 @@ echo -e "  ${RB}♦️${NC} ${YB}RAM     :  ${uram}MB / ${tram}MB ${NC} "
 echo -e "  ${RB}♦️${NC} ${YB}DOMAIN  :  $domain ${NC} "
 echo -e "  ${RB}♦️${NC} ${YB}NS-HOST :  $(cat /root/nsdomain) ${NC} "
 echo -e "  ${RB}♦️${NC} ${YB}IP      :  $IPVPS ${NC} "
-echo -e "  ${RB}♦️${NC} ${YB}IPSVPS  :  $ISPVPS ${NC} "
+#echo -e "  ${RB}♦️${NC} ${YB}IPSVPS  :  $ISPVPS ${NC} "
 echo -e "  ${RB}♦️${NC} ${YB}CLIENT  :  $Name ${NC} "
 echo -e "  ${RB}♦️${NC} ${YB}EXP     :  $exp ($exp2 days) ${NC} "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
