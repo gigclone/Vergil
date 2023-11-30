@@ -209,11 +209,11 @@ echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $res
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e "                   ${WB}»»» VPS Menu «««${NC}                 "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "  ${RB}06.${NC} ${YB}SETTING VPS ${NC}          ${RB}66.${NC} ${YB}INSTALL TCP BBR ${NC}"
-echo -e "  ${RB}07.${NC} ${YB}BACKUP/RESTORE ${NC}       ${RB}77.${NC} ${YB}INSTALL BBR+ 5.15 ${NC}"
-echo -e "  ${RB}08.${NC} ${YB}SET REBOOT ${NC}           ${RB}88.${NC} ${YB}XRAY-CORE CHANGER ${NC}"       
-echo -e "  ${RB}09.${NC} ${YB}ADD DOMAIN/HOST ${NC}      ${RB}99.${NC} ${YB}FIX UPDATE ${NC}"      
-echo -e "  ${RB}10.${NC} ${YB}ADD NS-DOMAIN ${NC}     "
+echo -e "  ${RB}06.${NC} ${YB}SETTING VPS ${NC}          ${RB}55.${NC} ${YB}INSTALL TCP BBR ${NC}"
+echo -e "  ${RB}07.${NC} ${YB}BACKUP/RESTORE ${NC}       ${RB}66.${NC} ${YB}INSTALL BBR+ 5.15 ${NC}"
+echo -e "  ${RB}08.${NC} ${YB}SET REBOOT ${NC}           ${RB}77.${NC} ${YB}SWAP RAM ${NC}"       
+echo -e "  ${RB}09.${NC} ${YB}ADD DOMAIN/HOST ${NC}      ${RB}88.${NC} ${YB}XRAY-CORE CHANGER ${NC}" 
+echo -e "  ${RB}10.${NC} ${YB}ADD NS-DOMAIN ${NC}        ${RB}99.${NC} ${YB}FIX UPDATE ${NC}"  
 echo -e "  ${RB}11.${NC} ${YB}RENEW CERT XRAYS ${NC}  "    
 echo -e ""
 echo -e "  ${RB}12.${NC} ${YB}CHECK VPN PORT ${NC}"
@@ -258,8 +258,9 @@ case $menu in
 20) clear ; speedtest ;;
 21) clear ; restart ;;
 22) clear ; reboot ;;
-66) clear ; bbr3 ;;
-77) clear ; bbr4 ;;
+55) clear ; bbr3 ;;
+66) clear ; bbr4 ;;
+77) clear ; wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/NevermoreSSH/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram ;;
 88) clear ; wget -q -O /usr/bin/xraychanger "https://raw.githubusercontent.com/NevermoreSSH/Xcore-custompath/main/xraychanger.sh" && chmod +x /usr/bin/xraychanger && xraychanger
 99) clear ; up ;;
 0) clear ; menu ;;
