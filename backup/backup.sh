@@ -14,16 +14,17 @@ LIGHT='\033[0;37m'
 # Getting
 clear
 IP=$(wget -qO- ipinfo.io/ip);
-date=$(date +"%Y-%m-%d")
-clear
-email=$(cat /home/email)
-if [[ "$email" = "" ]]; then
-echo "Masukkan Email Untuk Menerima Backup"
-read -rp "Email : " -e email
-cat <<EOF>>/home/email
-$email
-EOF
-fi
+date=$(date +"%Y-%m-%d-%H:%M:%S")
+domain=$(cat /etc/xray/domain)
+#clear
+#email=$(cat /home/email)
+#if [[ "$email" = "" ]]; then
+#echo "Masukkan Email Untuk Menerima Backup"
+#read -rp "Email : " -e email
+#cat <<EOF>>/home/email
+#$email
+#EOF
+#fi
 clear
 figlet "Backup"
 echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
@@ -38,9 +39,9 @@ cp -r /root/nsdomain backup/nsdomain
 cp -r /etc/slowdns backup/slowdns
 cp -r /home/vps/public_html backup/public_html
 cd /root
-zip -r $IP-$date.zip backup > /dev/null 2>&1
-rclone copy /root/$IP-$date.zip dr:backup/
-url=$(rclone link dr:backup/$IP-$date.zip)
+zip -r $IP-$date-$domain-vergil.zip backup > /dev/null 2>&1
+rclone copy /root/$IP-$date-$domain-vergil.zip dr:backup/
+url=$(rclone link dr:backup/$IP-$date-$domain-vergil.zip)
 id=(`echo $url | grep '^https' | cut -d'=' -f2`)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
 echo -e "
@@ -52,7 +53,7 @@ Tanggal       : $date
 ==================================
 " | mail -s "Backup Data" $email
 rm -rf /root/backup
-rm -r /root/$IP-$date.zip
+rm -r /root/$IP-$date-$domain-vergil.zip
 clear
 echo -e "
 Detail Backup 
